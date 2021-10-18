@@ -1,0 +1,21 @@
+{
+    "title": "Input schema for the apify_project actor.",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "textObject": {
+            "title": "JSON with Text",
+            "type": "object",
+            "description": "JSON object with string fields.",
+            "prefill": {
+                "german": "Erkennt die Sprache der übergebenen Zeichenkette und gibt ein Objekt mit allen verfügbaren ISO 639 Sprach Codes zusammen mit der Genauigkeit zurück. Die Genauigkeit sollte möglichst bei 1 liegen, was dem besten Ergebniss entspricht, einer Genauigkeit von unter 1 sollten weiteren Test folgen. Der übergebene Text sollte möglichst lang sein damit die Genauigkeit möglichst hoch ist.",
+                "english": "Detects the language of the given string and returns an object with all available ISO 639 language codes along with the accuracy.",
+                "spanish": "Nunca parece haber suficiente tiempo en el día para hacer que todo suceda."
+            },
+            "editor": "json"
+        }
+    },
+    "required": [
+        "textObject"
+    ]
+}
